@@ -18,6 +18,7 @@
 
 body {
     background-color: var(--primary-background);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -173,6 +174,8 @@ p {
 .cta {
     margin-top: 6rem;
     padding: 8rem 2rem;
+    background-color: transparent;
+    z-index: 0;
 }
 
 .cta img {
@@ -205,6 +208,25 @@ p {
 
 .cta__box--text {
     color: var(--secondary-background);
+}
+
+/*footer*/
+footer {
+    padding: 4rem 2rem;
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 
