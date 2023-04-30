@@ -79,3 +79,19 @@ p {
 .secondary-button:hover {
     color: var(--secondary-color);
 }
+
+.nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.nav button {
+    color: var(--primary-background);
+}
+
+.nav__logo {
+    cursor: pointer;
+}
