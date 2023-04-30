@@ -64,7 +64,7 @@ p {
 .primary-button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .secondary-button {
@@ -239,5 +239,58 @@ footer {
     h2 {
         font-size: 2rem;
         line-height: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero .container {
+        background-image: url(/assets/images/bg-pattern-1.svg), url(/assets/images/bg-pattern-2.svg);
+        background-position: -30% 0, 105% 50%;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        max-width: 550px;
+    }
+
+    .hero img {
+        max-width: 514px;
+        max-height: 296px;
+    }
+
+    .features {
+        margin-top: 8rem;
+    }
+
+    .feature__card {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .feature__body {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cta__box {
+        align-items: flex-start;
+        text-align: left;
+        max-width: 600px;
+        background-image: url(/assets/images/bg-pattern-3.svg);
+        background-position: 90% 150%;
+        background-repeat: no-repeat;
+    }
+
+    .cta img {
+        top: -50%;
+        left: -1%;
+        transform: translateX(-50%);
     }
 }
